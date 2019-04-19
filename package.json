@@ -1,0 +1,35 @@
+{
+  "name": "ts-web-lib",
+  "version": "0.1.0",
+  "main": "./dist/ts-web-lib.js",
+  "typings": "./dist/ts-web-lib.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack.cmd",
+    "build-w": "./node_modules/.bin/webpack.cmd --watch",
+    "test": "./node_modules/.bin/jest.cmd"
+  },
+  "types": "./dist/*.d.ts",
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "awesome-typescript-loader": "^5.2.1",
+    "jest": "^24.7.1",
+    "source-map-loader": "^0.2.4",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.2",
+    "typescript-declaration-webpack-plugin": "^0.1.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  }
+}
